@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-class Mypost extends StatelessWidget {
+class Gacha extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Text('Post画面（TBD）'),
+      child: Text('ガチャ画面（TBD）'),
     );
   }
 }

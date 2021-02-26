@@ -18,7 +18,7 @@ class Start extends StatelessWidget {
               baseColor: Colors.red,
               highlightColor: Colors.yellow,
               child: Text(
-                '勉強用アプリ',
+                'ソシャゲ',
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 40.0,

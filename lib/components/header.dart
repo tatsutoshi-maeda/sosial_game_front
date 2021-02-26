@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'like.dart';
-import 'post.dart';
+import 'gacha.dart';
+import 'box.dart';
 import 'reduxsample.dart';
 
 class Header extends StatefulWidget {
@@ -11,14 +11,14 @@ class Header extends StatefulWidget {
 
 class _HeaderState extends State<Header> {
   static MyHomePage home = new MyHomePage();
-  static Mypost mypost = new Mypost();
-  static Like like = new Like();
+  static Box box = new Box();
+  static Gacha gacha = new Gacha();
   int _selectedIndex = 0;
 
   static List<Widget> _widgetOptions = <Widget>[
     home,
-    mypost,
-    like,
+    box,
+    gacha,
   ];
 
   void _onItemTapped(int index) {
@@ -70,12 +70,12 @@ class _HeaderState extends State<Header> {
             title: Text('Home'),
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.local_post_office),
-            title: Text('My post'),
+            icon: Icon(Icons.folder_shared_rounded),
+            title: Text('Box'),
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.stars),
-            title: Text('Like'),
+            icon: Icon(Icons.sync_outlined),
+            title: Text('ガチャ'),
           ),
         ],
         currentIndex: _selectedIndex,
