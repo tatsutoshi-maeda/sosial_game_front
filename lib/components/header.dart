@@ -32,30 +32,26 @@ class _HeaderState extends State<Header> {
     final Size size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
-        leading: FlatButton(
-          child: Icon(Icons.home), // TODO: SVGファイル表示したい
-          onPressed: () {
-            Navigator.pop(context);
-          },
+        automaticallyImplyLeading: false,
+        leading: Column(
+          children: <Widget>[
+            Text('なまえ'),
+            Text('Rank'),
+            Text('999',style: TextStyle(fontWeight: FontWeight.bold)),
+          ],
         ),
         actions: <Widget>[
-          SizedBox(
-            width: 44,
-            child: FlatButton(
-              child: Icon(Icons.search),
-              onPressed: () {
-                // TODO
-              },
-            ),
+          Column(
+            children: <Widget>[
+              Text('次ランクまで：' + 'aaa' +'                    ' ),
+              Text('Act：' + 'aaa' + '                    '),
+            ],
           ),
-          SizedBox(
-            width: 44,
-            child: FlatButton(
-              child: Icon(Icons.more_vert),
-              onPressed: () {
-                // TODO
-              },
-            ),
+          Column(
+            children: <Widget>[
+              Text('Gold：' + 'aaa' + '  '),
+              Text('ishi：' + 'aaa' + '  '),
+            ],
           ),
         ],
       ),
